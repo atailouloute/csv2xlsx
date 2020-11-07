@@ -5,6 +5,6 @@ FROM ${ARCH}/python:${VERSION}
 
 MAINTAINER Ahmed TAILOULOUTE <ahmed.tailouloute@gmail.com>
 
-RUN pip install pyinstaller
+RUN pip install pyinstaller && pip install --user XlsxWriter
 
 COPY csv2xlsx.py /home/csv2xlsx.py
