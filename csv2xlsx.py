@@ -21,7 +21,7 @@ worksheet = workbook.add_worksheet()
 row_number = 0
 
 with open(args.input_file, 'r') as file:
-    reader = csv.reader(file, delimiter=',')
+    reader = csv.reader(file, delimiter=args.delimiter)
     for row in reader:
         col_number = 0
         for cell in row:
